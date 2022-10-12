@@ -835,7 +835,7 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -848,15 +848,15 @@ footer span a:hover{
     }
     .experience .serv-content .card{
         width: 100%;
-        height: 820px;
+        height: 750px;
     }
     .education .serv-content .card{
         width: 100%;
-        height: 470px;
+        height: 460px;
     }
     .achivements .serv-content .card{
         width: 100%;
-        height: 560px;
+        height: 530px;
     }
     .contact .right form .fields{
         flex-direction: column;
