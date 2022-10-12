@@ -259,7 +259,7 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
+/* experience section styling */
 .experience, .education, .project{
     color:#fff;
     background: #111;
@@ -278,6 +278,7 @@ section .title::after{
 .experience .serv-content .card{
     width: calc(50% - 20px);
     background: #222;
+    height: 600px;
     text-align: justify;
     border-radius: 6px;
     padding: 50px 25px;
@@ -353,6 +354,7 @@ section .title::after{
     width: calc(50% - 20px);
     background: #222;
     text-align: justify;
+    height: 400px;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
@@ -406,6 +408,7 @@ section .title::after{
 .achivements .serv-content .card{
     width: calc(50% - 20px);
     background: lightgray;
+    height: 450px;
     text-align: justify;
     border-radius: 6px;
     padding: 50px 25px;
@@ -462,6 +465,7 @@ section .title::after{
 .project .carousel .card{
     background: #222;
     border-radius: 6px;
+    height: 500px;
     padding: 25px 35px;
     text-align: justify;
     overflow: hidden;
