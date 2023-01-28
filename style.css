@@ -276,9 +276,9 @@ section .title::after{
     content: "";
 }
 .experience .serv-content .card{
-    width: calc(50% - 20px);
+    width: calc(100%/3 - 10px);
     background: #222;
-    height: 650px;
+    height: 730px;
     text-align: justify;
     border-radius: 6px;
     padding: 50px 25px;
