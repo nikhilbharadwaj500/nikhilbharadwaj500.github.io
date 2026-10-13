@@ -1,0 +1,47 @@
+<section class="education-section" id="education">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">06 // Academic Foundation</span>
+      <h2 class="section-title">Formal <span class="gradient-text">Education</span></h2>
+      <p class="section-subtitle">
+        Master's and Bachelor's engineering foundations in software design, distributed architectures, and information science.
+      </p>
+    </div>
+
+    <div class="education-grid">
+      @for (edu of educationList; track edu.institution) {
+        <div class="glass-card education-card">
+          <!-- Static Header: Period & CGPA -->
+          <div class="edu-top-meta">
+            <span class="edu-period">{{ edu.period }}</span>
+            <span class="edu-grade">{{ edu.grade }}</span>
+          </div>
+
+          <!-- Dynamic Body Block -->
+          <div class="edu-body-block">
+            <!-- Resting View: Degree, Field, Institution -->
+            <div class="edu-resting-view">
+              <h3 class="edu-degree">{{ edu.degree }}</h3>
+              <h4 class="edu-field">{{ edu.field }}</h4>
+              <h5 class="edu-institution">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                {{ edu.institution }}
+              </h5>
+            </div>
+
+            <!-- Hover View: Specialization & Curriculum Details -->
+            @if (edu.details) {
+              <div class="edu-hover-view">
+                <span class="details-degree-tag">{{ edu.degree }} • {{ edu.field }}</span>
+                <p class="edu-details">{{ edu.details }}</p>
+              </div>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

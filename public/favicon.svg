@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="nb-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="142" ry="142" fill="url(#nb-grad)" stroke="rgba(255, 255, 255, 0.25)" stroke-width="14" />
+  <text x="256" y="272" fill="#ffffff" font-family="'JetBrains Mono', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="240" font-weight="800" letter-spacing="-0.02em" text-anchor="middle" dominant-baseline="middle">NB</text>
+</svg>

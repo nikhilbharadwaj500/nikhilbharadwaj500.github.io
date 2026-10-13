@@ -1,0 +1,56 @@
+<section class="achievements-section" id="achievements">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">05 // Honors &amp; Credentials</span>
+      <h2 class="section-title">Honors &amp; <span class="gradient-text">Certifications</span></h2>
+      <p class="section-subtitle">
+        Milestones of technical excellence, peer-reviewed academic publication, and verified credentials.
+      </p>
+    </div>
+
+    <div class="achievements-grid">
+      @for (item of achievements; track item.id) {
+        <div class="glass-card achievement-card">
+          <!-- Static Header: Line 1 Badge, Line 2 Issuer -->
+          <div class="card-header-block">
+            <div class="badge-row">
+              <span class="badge-text">{{ item.badge || item.type }}</span>
+            </div>
+            <div class="issuer-row">
+              <span class="issuer-text">{{ item.issuer }}</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Body: Heading (Default) / Description (On Hover) -->
+          <div class="card-body-block">
+            <!-- Resting View: Heading & Context Subtitle -->
+            <div class="title-view">
+              <h3 class="achievement-title">{{ item.title }}</h3>
+              @if (item.subtitle) {
+                <span class="achievement-subtitle">{{ item.subtitle }}</span>
+              }
+            </div>
+
+            <!-- Hover View: Description & Actions -->
+            <div class="desc-view">
+              <p class="achievement-desc">{{ item.description }}</p>
+
+              @if (item.link) {
+                <div class="achievement-link-wrap">
+                  <a [href]="item.link" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm action-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    {{ item.linkText || 'View Document' }}
+                  </a>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

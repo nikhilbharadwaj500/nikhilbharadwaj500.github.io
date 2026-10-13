@@ -1,0 +1,84 @@
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">01 // Background</span>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      <p class="section-subtitle">A glimpse into my journey, engineering philosophy, and what drives my work.</p>
+    </div>
+
+    <div class="about-grid">
+      <!-- Left: Focused Profile Summary -->
+      <div class="about-text-column">
+        <h3 class="about-lead">
+          Engineering scalable systems with end-to-end technical ownership and precision.
+        </h3>
+        
+        <p class="about-paragraph">
+          Senior Software Engineer with 5+ years of full-lifecycle engineering across healthcare diagnostics, high-throughput insurtech policy issuance, and multi-tenant EDI/ERP/3PL integration platforms.
+        </p>
+
+        <p class="about-paragraph">
+          Specialized in owning and scaling distributed systems in <strong>Java &amp; Spring Boot</strong> alongside responsive, state-driven <strong>Angular</strong> web applications. Proven track record in orchestrating <strong>Render</strong> cloud deployments, managing secure API secrets, provisioning dedicated <strong>SFTP servers</strong>, and driving rapid agile deliveries with rigorous testing standards.
+        </p>
+
+        <div class="about-actions">
+          <a href="#experience" class="btn btn-outline">
+            View Career Timeline
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Engineering Pillars -->
+      <div class="about-pillars-column">
+        <div class="pillars-grid">
+          @for (pillar of pillars; track pillar.title) {
+            <div class="glass-card pillar-card" tabindex="0">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  @switch (pillar.icon) {
+                    @case ('layers') {
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                      </svg>
+                    }
+                    @case ('zap') {
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                      </svg>
+                    }
+                    @case ('activity') {
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                      </svg>
+                    }
+                    @default {
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                      </svg>
+                    }
+                  }
+                </div>
+                <h4 class="pillar-title">{{ pillar.title }}</h4>
+                <div class="pillar-chevron">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <div class="pillar-desc-wrap">
+                <p class="pillar-desc">{{ pillar.desc }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

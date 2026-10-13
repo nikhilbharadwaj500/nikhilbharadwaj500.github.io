@@ -1,0 +1,152 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: start;
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.about-lead {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text-primary);
+  margin-bottom: 1.15rem;
+}
+
+.about-paragraph {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+
+  strong {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+/* Compact Hover-Revealed Pillar Cards */
+.pillars-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.pillar-card {
+  padding: 0.9rem 1.15rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  outline: none;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+
+  .pillar-header {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 0;
+    transition: margin-bottom 0.25s ease;
+  }
+
+  .pillar-icon-box {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-sm);
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    color: var(--accent-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+  }
+
+  .pillar-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    flex: 1;
+    letter-spacing: -0.01em;
+    transition: color 0.25s ease;
+  }
+
+  .pillar-chevron {
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    transition: transform 0.25s ease, color 0.25s ease;
+  }
+
+  /* Smooth accordion reveal on hover or focus */
+  .pillar-desc-wrap {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+
+    .pillar-desc {
+      overflow: hidden;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+      margin: 0;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+  }
+
+  /* Hover & Focus state: reveals crisp description */
+  &:hover, &:focus-visible {
+    border-color: var(--accent-cyan);
+    background: var(--bg-card-hover);
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15);
+    transform: translateY(-2px);
+
+    .pillar-header {
+      margin-bottom: 0.55rem;
+    }
+
+    .pillar-title {
+      color: var(--accent-cyan);
+    }
+
+    .pillar-icon-box {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.35);
+    }
+
+    .pillar-chevron {
+      transform: rotate(180deg);
+      color: var(--accent-cyan);
+    }
+
+    .pillar-desc-wrap {
+      grid-template-rows: 1fr;
+
+      .pillar-desc {
+        opacity: 1;
+        padding-top: 0.15rem;
+      }
+    }
+  }
+}
