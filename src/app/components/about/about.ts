@@ -20,8 +20,8 @@ export class AboutComponent {
     },
     {
       icon: 'zap',
-      title: 'Multi-Tenant Integrations & Scale',
-      desc: 'Real-time multi-client sync connecting Cin7, Shopify, MYOB, and CartonCloud 3PL networks.'
+      title: 'Multi-Client & Multi-Auth Systems',
+      desc: 'Resilient multi-client data routing paired with dynamic multi-auth strategies (OAuth2, Md5Query, MultiHeaderAuth, HMAC).'
     },
     {
       icon: 'activity',

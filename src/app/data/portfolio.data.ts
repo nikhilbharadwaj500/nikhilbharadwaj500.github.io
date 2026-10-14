@@ -18,11 +18,11 @@ export const PERSONAL_INFO = {
   email: 'nikhil.bharadwaj619@gmail.com',
   linkedin: 'https://www.linkedin.com/in/nikhil-bharadwaj-b78357170/',
   github: 'https://github.com/nikhilbharadwaj500',
-  resumeUrl: 'https://drive.google.com/file/d/1LmkJQESlBG64Z7DS7ay7KARPxKOXCeIF/view?usp=sharing',
+  resumeUrl: 'Nikhil_Bharadwaj_Resume.pdf',
   avatarUrl: 'images/myself.jpg',
   aboutImgUrl: 'images/about.jpg',
   location: 'Bengaluru, India (Remote)',
-  summary: `Senior Software Engineer with 5+ years of experience architecting resilient distributed systems, modern Angular applications, and enterprise microservices across healthcare diagnostics, insurtech policy engines, and multi-tenant EDI/ERP/3PL integration hubs. Passionate about end-to-end codebase ownership, secure API architectures, and automated cloud deployments.`
+  summary: `Senior Software Engineer with 5+ years of experience architecting resilient distributed systems, high-throughput Multi-Client runtimes, and versatile Multi-Auth security strategies. Specialized in Java, Spring Boot, and modern Angular applications across healthcare diagnostics, insurtech policy engines, and global 3PL/EDI integration ecosystems.`
 };
 
 export const QUICK_STATS: StatItem[] = [
@@ -63,22 +63,23 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Angular',
       'Java',
       'Spring Boot',
+      'Multi-Auth Handling',
+      'Multi-Client & Multi-Tenant Architecture',
+      '3PL Integrations',
+      'EDI',
+      'Accounting Integrations',
+      'E-Commerce Integrations',
       'Render Cloud',
       'Docker',
-      'Cin7 Core & Omni',
-      'Shopify (REST & GraphQL)',
-      'ShipHero & ControlPort WMS',
-      'Consignly & CartonCloud 3PL',
-      'Xero & MYOB',
       'SFTP Server Administration',
       'Microsoft Graph API',
-      'Multi-Tenant Architecture',
       'Cron Schedulers'
     ],
-    description: 'Held sole end-to-end engineering ownership of the enterprise integration ecosystem from inception (June 2025 – Jan 2026), followed by guiding modular system refactoring upon team expansion. Architected high-frequency scheduled sync engines across 25+ client organizations, built the real-time Angular Integration Dashboard for operational visibility, modernised the corporate web presence from WordPress to Angular, and provisioned resilient cloud and SFTP infrastructure.',
+    description: 'Held complete end-to-end engineering ownership of the enterprise integration ecosystem across its entire lifecycle, architecting resilient multi-client handling and multi-tenant scheduled sync engines across 25+ global client organizations. Built a robust backend supporting dynamic Multi-Auth Handling, 3PL integrations, EDI pipelines, accounting syncs, and e-commerce platforms. Developed the real-time Angular Integration Dashboard for operational visibility, modernized the corporate web presence from WordPress to Angular, and provisioned hardened cloud and SFTP infrastructure.',
     responsibilities: [
-      'Held complete end-to-end codebase ownership of the core integration architecture from day one, establishing multi-tenant patterns, credential resolvers, and authorization factories (OAuth2, API keys, HMAC signatures) before guiding team collaboration.',
-      'Engineered 35+ automated integration schedulers and cron execution engines bridging enterprise ERPs (Cin7 Core, Cin7 Omni), WMS/3PLs (ShipHero, ControlPort, Consignly, GRL, CartonCloud SFTP), eCommerce (Shopify REST & GraphQL), and accounting platforms (Xero, MYOB).',
+      'Held complete end-to-end engineering and codebase ownership of the enterprise integration ecosystem across its entire lifecycle, architecting scalable multi-client handling patterns, dynamic credential resolvers, and secure multi-tenant data segregation.',
+      'Designed and engineered a versatile backend Multi-Auth Handling engine supporting diverse authentication protocols (OAuth2, Md5Query, MultiHeaderAuth, HMAC, and API keys) tailored per client and vendor requirement.',
+      'Engineered high-throughput Multi-Client handling architectures with 35+ automated integration schedulers and cron execution engines bridging 3PL Integrations, EDI systems, E-Commerce platforms, and Accounting Integrations across 25+ client organizations.',
       'Architected and delivered the live Angular Integration Dashboard on Render, featuring Executive KPI tracking, multi-domain pipeline steppers (Received ➔ Validated ➔ WMS ➔ Dispatched), root-cause bottleneck categorization (Missing SKU, Invalid Address, Holds), and 1-click payload inspection drawers.',
       'Re-architected the corporate web presence by migrating the official company website from legacy WordPress into a responsive, high-performance Angular application deployed on Render with modern component architecture and SEO optimization.',
       'Provisioned, hardened, and maintained dedicated SFTP servers for high-volume automated 3PL data ingestion and EDI file exchanges, ensuring robust error recovery and file reconciliation.',
@@ -163,9 +164,9 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     icon: 'server',
     skills: [
       { name: 'Java & Spring Boot Framework', level: 'Advanced', highlight: true },
-      { name: 'RESTful Microservices & APIs', level: 'Advanced', highlight: true },
-      { name: 'Multi-Tenant Architecture', level: 'Advanced', highlight: true },
-      { name: 'Multi-Threading & High Concurrency', level: 'Advanced', highlight: true }
+      { name: 'Multi-Auth Handling', level: 'Advanced', highlight: true },
+      { name: 'Multi-Client & Multi-Tenant Routing', level: 'Advanced', highlight: true },
+      { name: '3PL, EDI & E-Commerce Integrations', level: 'Advanced', highlight: true }
     ]
   },
   {
@@ -197,10 +198,11 @@ export const PROJECTS: ProjectItem[] = [
     period: '2025 – Present',
     category: 'Enterprise',
     featured: true,
-    description: 'Multi-tenant platform pairing automated Spring Boot schedulers with a reactive Angular operations dashboard to sync orders and inventory across ERP, eCommerce, and 3PL networks.',
-    technologies: ['Angular', 'Java', 'Spring Boot', 'Render Cloud', 'SFTP', 'Cin7'],
+    description: 'Multi-tenant enterprise platform pairing automated Spring Boot schedulers with a reactive Angular operations dashboard to sync orders and inventory across ERP, eCommerce, and 3PL networks.',
+    technologies: ['Angular', 'Java', 'Spring Boot', 'Multi-Auth Handling', 'Multi-Client', '3PL Integrations', 'EDI', 'Render Cloud'],
     highlights: [
-      'Engineered scheduled sync microservices in Java & Spring Boot connecting Cin7, Shopify, MYOB & 3PL.',
+      'Engineered multi-client scheduled sync microservices in Java & Spring Boot connecting 3PL, EDI, E-Commerce & Accounting systems.',
+      'Implemented versatile backend Multi-Auth Handling engine supporting dynamic authentication strategies across diverse vendor endpoints.',
       'Architected live Angular dashboard to monitor job health, inspect sync logs & trigger manual runs.',
       'Configured automated Render cloud deployments, multi-tenant secret isolation & secure SFTP servers.'
     ]
