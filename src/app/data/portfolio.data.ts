@@ -16,7 +16,7 @@ export const PERSONAL_INFO = {
     'Angular & Spring Boot Specialist'
   ],
   email: 'nikhil.bharadwaj619@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/nikhil-bharadwaj-b78357170/',
+  linkedin: 'https://www.linkedin.com/in/nikhil-bharadwaj-n/',
   github: 'https://github.com/nikhilbharadwaj500',
   resumeUrl: 'Nikhil_Bharadwaj_Resume.pdf',
   avatarUrl: 'images/myself.jpg',
